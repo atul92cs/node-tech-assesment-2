@@ -21,4 +21,7 @@ app.use('/', indexRouter);
 app.use('/recipes', recipeRouter);
 
 
-module.exports = app;
+let port=3000;
+app.listen(port,()=>{
+    console.log('application started on '+port);
+});
